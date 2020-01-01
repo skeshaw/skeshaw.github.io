@@ -497,7 +497,7 @@
     <div class="article-style">
       <p>The general idea of transfer learning is to reuse learnings or experiences from related tasks to obtain a <em>jumpstart</em> on the task of interest. A lot of work in this paradigm in RL is centered around learning from <em>easier</em> but related tasks to generalize to a desired, <em>harder</em> task.<br />
 A recently published work on Challenge Learning [<a href="https://drive.google.com/file/d/13lT4li8V0KKS0wqrn3Y047JiMEHCZAjF/view" target="_blank">Jason Ma, 2019</a>] explores the other direction of transfer. It proposes learning policies on a harder version of an environment and evaluating the same on an easier one by controlling a single environment variable. The paper, however, only demonstrates experimental results on CartPole using an Advantage Actor Critic (A2C) [<a href="https://arxiv.org/pdf/1602.01783.pdf" target="_blank">Mnih et al., 2016</a>] architecture.<br />
-We add evaluations of the environment on an actor-critic architecture using Proximal Policy Optimization (PPO) [<a href="https://arxiv.org/pdf/1707.06347.pdf" target="_blank">Schulman et al., 2017</a>] as the actor, which is shown to be much more robust to changes in the environment. We also control for an extra affecting variable, the magnitude of the horizontal force applied on the cart (a constant).</p>
+We add evaluations of the environment on an actor-critic architecture using Proximal Policy Optimization (PPO) [<a href="https://arxiv.org/pdf/1707.06347.pdf" target="_blank">Schulman et al., 2017</a>] as the actor, which is known to be much more robust to changes in the environment. We also control for an extra variable, the magnitude of the horizontal force applied on the cart (a constant).</p>
 
     </div>
 
